@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unser Team</title>
+    <link rel="stylesheet" href="styles2.css">
+    <style>
+        .team-descriptions {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .team-member {
+            text-align: center;
+            flex: 1;
+            margin: 0 10px;
+        }
+        .team-member img {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            border-radius: 50%;
+        }
+        .team-member h2 {
+            margin-top: 10px;
+        }
+        .team-member.joris h2,
+        .team-member.joris p {
+            color: #1e88e5; /* Light blue */
+        }
+        .team-member.pascal h2,
+        .team-member.pascal p {
+            color: #1565c0; /* Medium blue */
+        }
+        .team-member.thomas h2,
+        .team-member.thomas p {
+            color: #0d47a1; /* Dark blue */
+        }
+        footer {
+            background-color: #01579b;
+            color: white;
+            text-align: left;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        footer p, footer a {
+            color: white;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+        footer a:hover {
+            color: #0277bd;
+        }
+        .footer-home {
+            margin-left: auto;
+            order: 2;
+        }
+        .footer-contact {
+            order: 1;
+            flex-grow: 1;
+        }
+        @media (max-width: 768px) {
+            .team-descriptions {
+                flex-direction: column;
+                align-items: center;
+            }
+            .team-member {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Die Luftqualität wird präsentiert von</h1>
+    </header>
+    <main>
+        <div class="team-descriptions">
+            <section class="team-member joris">
+                <img src="jpg/jj.jpg" alt="Joris Lustenberger">
+                <h2>Joris Lustenberger</h2>
+                <p>Facilitymanager</p>
+                <p>Zuständig für Design und Programmierung</p>
+            </section>
+            <section class="team-member pascal">
+                <img src="jpg/pascal.jpg" alt="Pascal Linder">
+                <h2>Pascal Linder</h2>
+                <p>Netzwerkmanager</p>
+                <p>Zuständig für Inhalt und Layout</p>
+            </section>
+            <section class="team-member thomas">
+                <img src="jpg/thomas.jpg" alt="Thomas Häder">
+                <h2>Thomas Häder</h2>
+                <p>CFO</p>
+                <p>Zuständig für Culture und Usability</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-contact">
+            <p><a href="mailto:contact@airquality.ch">Kontakt</a></p>
+            <p>Adresse: Beispielstraße 1, 8000 Zürich, Schweiz</p>
+        </div>
+        <p class="footer-home"><a href="index2.html">Home</a></p>
+    </footer>
+</body>
+</html>

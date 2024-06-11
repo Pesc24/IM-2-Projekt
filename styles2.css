@@ -1,10 +1,12 @@
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
     background-color: #e0f7fa;
     color: #0277bd;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -12,6 +14,10 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+header h1 {
+    margin: 0;
 }
 
 #city-search {
@@ -55,6 +61,58 @@ header {
 
 .marker:hover {
     transform: scale(1.2);
+}
+
+#legend {
+    padding: 20px;
+    background-color: #e0f2f1;
+    border-top: 1px solid #0277bd;
+}
+
+#legend p {
+    display: flex;
+    align-items: center;
+}
+
+.legend-color {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #01579b;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer p, footer a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    display: block;
+}
+
+footer a:hover {
+    color: #0277bd;
+}
+
+.team-member {
+    text-align: center;
+    margin: 20px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 @keyframes fadeIn {

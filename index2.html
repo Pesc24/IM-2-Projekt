@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luftqualität in Schweizer Grossstädten</title>
+    <title>Luftqualität in der Schweiz</title>
     <link rel="stylesheet" href="styles2.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
@@ -11,13 +11,26 @@
 </head>
 <body>
     <header>
-        <h1>Luftqualität in Schweizer Grossstädten</h1>
-        <input type="text" id="city-search" placeholder="Stadt suchen...">
+        <h1>Luftqualität in der Schweiz</h1>
     </header>
     <main>
+        <input type="text" id="city-search" placeholder="Stadt suchen...">
         <div id="map"></div>
-        <div id="city-info"></div>
+        <div id="legend">
+            <h3>Luftqualitätsskala</h3>
+            <p><span class="legend-color" style="background-color: #00e400;"></span> <strong>SEHR GUT (0-50)</strong></p>
+            <p><span class="legend-color" style="background-color: #ffff00;"></span> <strong>GUT (50-100)</strong></p>
+            <p><span class="legend-color" style="background-color: #ff7e00;"></span> <strong>MITTELMÄSSIG (101-150)</strong></p>
+            <p><span class="legend-color" style="background-color: #ff0000;"></span> <strong>AUSREICHEND (151-200)</strong></p>
+            <p><span class="legend-color" style="background-color: #99004c;"></span> <strong>SCHLECHT (201-300)</strong></p>
+            <p><span class="legend-color" style="background-color: #7e0023;"></span> <strong>SEHR SCHLECHT (>300)</strong></p>
+        </div>
     </main>
+    <footer>
+        <p><a href="team.html"><strong>Team</strong></a></p>
+        <p><a href="mailto:contact@airquality.ch">Kontakt</a></p>
+        <p>Adresse: Beispielstraße 1, 8000 Zürich, Schweiz</p>
+    </footer>
     <script src="script2.js"></script>
 </body>
 </html>
